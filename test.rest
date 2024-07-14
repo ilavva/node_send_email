@@ -1,0 +1,37 @@
+### Test Send Mail - Success
+POST http://localhost:3000/sendEmail
+Content-Type: application/json
+
+{
+    "email": "dveira@gmail.com",
+    "subject": "Test Subject",
+    "text": "This is a test email."
+}
+
+### Test Send Mail - Missing Subject
+POST http://localhost:3000/sendEmail
+Content-Type: application/json
+
+{
+    "email": "dveira@gmail.com",
+    "text": "This is a test email."
+}
+
+### Test Send Mail - Invalid Email
+POST http://localhost:3000/sendEmail
+Content-Type: application/json
+
+{
+    "email": "invalid-email",
+    "subject": "Test Subject",
+    "text": "This is a test email."
+}
+
+### Test Send Mail - Missing Email
+POST http://localhost:3000/sendEmail
+Content-Type: application/json
+
+{
+    "subject": "Test Subject",
+    "text": "This is a test email."
+}
