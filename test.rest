@@ -3,7 +3,7 @@ POST http://localhost:3000/sendEmail
 Content-Type: application/json
 
 {
-    "email": "dveira@gmail.com",
+    "email": "email@example.com",
     "subject": "Test Subject",
     "text": "This is a test email."
 }
@@ -13,7 +13,7 @@ POST http://localhost:3000/sendEmail
 Content-Type: application/json
 
 {
-    "email": "dveira@gmail.com",
+    "email": "email@example.com",
     "text": "This is a test email."
 }
 
